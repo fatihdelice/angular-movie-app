@@ -20,3 +20,9 @@ ng g s services_name or ng generate service services_name
 ```shell
 ng g m app-routing --flat --module=app or ng generate module app-routing --flat --module=app
 ```
+
+## Screenshots
+
+![Screenshot1](./screenshots/s1.png)
+![Screenshot2](./screenshots/s2.png)
+![Screenshot3](./screenshots/s3.png)
