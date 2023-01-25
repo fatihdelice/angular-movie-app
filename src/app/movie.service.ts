@@ -24,7 +24,7 @@ export class MovieService {
 
   getMovie(id: any): Observable<Movie | null | undefined> {
     this.loggingService.add('MovieService: get detail by id=' + id);
-    return this.http.get<Movie>(this.apiMoviesUrl+'/'+id);
+    return this.http.get<Movie>(this.apiMoviesUrl + '/' + id);
   }
 
   update(movie: Movie): Observable<any> {
@@ -36,5 +36,9 @@ export class MovieService {
 
   add(movie: Movie): Observable<Movie> {
     return this.http.post<Movie>(this.apiMoviesUrl, movie);
+  }
+
+  delete(movie: Movie): Observable<Movie> {
+    return this.http.delete<Movie>(this.apiMoviesUrl + '/' + movie.id);
   }
 }
